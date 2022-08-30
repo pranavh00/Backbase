@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Git checkout"){
             steps {
-            git branch: 'develop',
+            git branch: 'main',
                 url: 'https://github.com/pranavh00/Backbase.git'
 
             sh "ls -lat"
