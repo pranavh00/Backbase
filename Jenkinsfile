@@ -17,7 +17,7 @@ pipeline {
         }
         stage("docker build"){
             steps{                     
-	            sh 'sudo docker build -t pranav_tomcat:$BUILD_NUMBER .'     
+	            sh 'docker build -t pranav_tomcat:$BUILD_NUMBER .'     
 	            echo 'Build Image Completed'                
             }  
         }
